@@ -1,0 +1,36 @@
+{
+  "name": "genpark-agentic-commerce-freight-accessorial-liftgate-inside-delivery-auditor-skill",
+  "version": "1.0.0",
+  "description": "LTL freight accessorial billing auditor: liftgate, inside delivery, residential drop-off & notification fee dispute engine.",
+  "category": "agentic_commerce",
+  "author": "GenPark AI",
+  "website": "https://www.genpark.ai",
+  "linkedin": "https://www.linkedin.com/company/92955550",
+  "main": "skills.py",
+  "tools": [
+    {
+      "name": "audit_freight_accessorial_charges",
+      "description": "LTL freight accessorial billing auditor: liftgate, inside delivery, residential drop-off & notification fee dispute engine.",
+      "sample_input": {
+        "carrier_invoice_accessorials": [
+          {
+            "code": "LIFTGATE",
+            "amount": 85.0
+          },
+          {
+            "code": "INSIDE_DELIVERY",
+            "amount": 120.0
+          },
+          {
+            "code": "NOTIFY_PRIOR",
+            "amount": 35.0
+          }
+        ],
+        "bol_authorized_accessorials": [
+          "NOTIFY_PRIOR"
+        ],
+        "consignee_has_dock": true
+      }
+    }
+  ]
+}
